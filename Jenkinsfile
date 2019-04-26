@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building.. Path ='
+                sh 'pwd'
                 sh 'npm install'
+
             }
         }
         stage('Test') {
